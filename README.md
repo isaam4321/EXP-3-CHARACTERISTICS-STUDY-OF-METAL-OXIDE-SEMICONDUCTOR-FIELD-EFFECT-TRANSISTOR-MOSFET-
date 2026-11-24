@@ -7,22 +7,7 @@ To simulate the drain and transfer characteristics of a MOSFET using LTspice sof
 •	MOSFET device/model
 •	DC voltage sources
 •	Voltage/current probes
-3. THEORY
-3.1 Transfer Characteristics
-In MOSFET applications, the input signal is the gate-to-source voltage VGS and the output is the drain current ID. The ability of a MOSFET to amplify the signal is given by the output/input ratio called transconductance.
-Transconductance:
-gm = dID / dVGS    (with VDS kept constant)
-The transfer characteristic represents the relationship between ID and VGS for a constant VDS.
-3.2 Drain Characteristics
-A MOSFET operates in three regions:
-1.	Cut-off region
-2.	Linear/Ohmic region
-3.	Saturation region
-Cut-off Region: The MOSFET is in cut-off when VGS < VT. The drain current is approximately zero.
-Linear Region: The MOSFET operates in the linear region when VGS > VT and VDS < (VGS − VT).
-Saturation Region: The MOSFET operates in saturation when VGS > VT and VDS ≥ (VGS − VT).
-Drain resistance is obtained from the slope of the drain characteristic:
-rd = dVDS / dID    (with VGS kept constant)
+
 4. CIRCUIT DIAGRAM
 A. Transfer Characteristics – Connect the MOSFET circuit in LTspice. VGS is varied while maintaining a constant VDS, and the corresponding ID is observed.
 [Insert LTspice Transfer Characteristics Circuit Diagram Here]
@@ -51,7 +36,8 @@ A. Transfer Characteristics
 S. No.	VGS (V)	VDS (V)	ID (mA)
 1			
 2			
-3			
+3			<img width="1698" height="355" alt="3 exp" src="https://github.com/user-attachments/assets/7de98321-964f-4147-acec-6ba44167bd68" />
+
 4			
 5			
 6			
@@ -71,23 +57,13 @@ S. No.	VDS (V)	VGS (V)	ID (mA)
 Repeat the observation for different constant values of VGS.
 Simulation Results
 
- ID vs. VDS for different values of VGS.
+ <img width="1882" height="361" alt="Screenshot 2026-11-19 095635" src="https://github.com/user-attachments/assets/059ce952-ec87-4ee7-b2c5-56457dc1f5a9" />
 
 
 
-8. CALCULATIONS
-Transconductance:
-gm = ΔID / ΔVGS
-Therefore,  gm = __________________ S
-Drain Resistance:
-rd = ΔVDS / ΔID
-Therefore,  rd = __________________ Ω
+
+
 9. RESULT
 Thus, the drain and transfer characteristics of the MOSFET were simulated using LTspice. The values of transconductance (gm) and drain resistance (rd) were determined from the respective characteristics.
-gm = __________________ S
-rd = __________________ Ω
-10. PRECAUTIONS
-•	Check the MOSFET terminal connections before starting the simulation.
-•	Use appropriate voltage sweep limits.
-•	Keep VDS constant while obtaining transfer characteristics.
-•	Keep VGS constant for each drain-characteristic curve.
+
+
