@@ -10,9 +10,11 @@ To simulate the drain and transfer characteristics of a MOSFET using LTspice sof
 
 4. CIRCUIT DIAGRAM
 A. Transfer Characteristics – Connect the MOSFET circuit in LTspice. VGS is varied while maintaining a constant VDS, and the corresponding ID is observed.
-[Insert LTspice Transfer Characteristics Circuit Diagram Here]
+<img width="914" height="189" alt="WhatsApp Image 2026-11-26 at 10 16 10 AM (1)" src="https://github.com/user-attachments/assets/37e47598-0db4-4099-927a-a54ca03470bf" />
+
 B. Drain Characteristics – Connect the MOSFET circuit in LTspice. VDS is varied for different constant values of VGS, and the corresponding ID is observed.
-[Insert LTspice Drain Characteristics Circuit Diagram Here]
+<img width="936" height="190" alt="WhatsApp Image 2026-11-26 at 9 27 08 PM" src="https://github.com/user-attachments/assets/2297086e-788c-4439-8a12-cbb974a148ca" />
+
 5. PROCEDURE
 A. Transfer Characteristics
 4.	Connect the MOSFET circuit as per the circuit diagram in LTspice.
